@@ -144,11 +144,5 @@ def run_model(position,angles,velocity,num_1,num_2,num_particles,box_length,dt,r
     # Stores all PCs
     pca_df = pd.DataFrame(pca_data,index=[*typeone,*typetwo],columns=labels)
     return(pca_df)
-    # plt.scatter(pca_df.PC1[0:num_1],pca_df.PC2[0:num_1], label = 'type 1')
-    # plt.scatter(pca_df.PC1[num_1:num_particles],pca_df.PC2[num_1:num_particles], label = 'type 2')
-    # plt.xlabel('PCA1')
-    # plt.ylabel('PCA2')
-    # plt.legend()
-    # plt.show()
 
 
